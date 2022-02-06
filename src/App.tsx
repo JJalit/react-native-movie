@@ -1,6 +1,9 @@
-import { View, Text } from 'react-native';
 import React, { useEffect } from 'react';
+import { StatusBar } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+
+import { UserContextProvider } from './Context/User';
+import Navigator from './Screens/Navigator';
 
 const App = () => {
   useEffect(() => {
@@ -8,9 +11,10 @@ const App = () => {
   }, []);
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>HI</Text>
-    </View>
+    <UserContextProvider>
+      <StatusBar barStyle="light-content" />
+      <Navigator />
+    </UserContextProvider>
   );
 };
 
