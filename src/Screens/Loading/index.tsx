@@ -1,11 +1,19 @@
-import { View, Text } from 'react-native';
 import React from 'react';
+import { ActivityIndicator } from 'react-native';
+import styled from 'styled-components/native';
+
+const Container = styled.View`
+  flex: 1;
+  background-color: #141414;
+  align-items: center;
+  justify-content: center;
+`;
 
 const Loading = () => {
   return (
-    <View>
-      <Text></Text>
-    </View>
+    <Container>
+      <ActivityIndicator color="#E70915" size="large" />
+    </Container>
   );
 };
 
