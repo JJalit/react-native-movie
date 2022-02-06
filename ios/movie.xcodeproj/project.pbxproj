@@ -94,7 +94,6 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				9A5CD4DE27AFB05A00F0DE25 /* SplashScreen.storyboard */,
 			);
 			name = movie;
 			sourceTree = "<group>";
@@ -119,6 +118,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				9A5CD4DE27AFB05A00F0DE25 /* SplashScreen.storyboard */,
 				13B07FAE1A68108700A75B9A /* movie */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* movieTests */,
