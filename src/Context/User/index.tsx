@@ -32,6 +32,9 @@ const UserContextProvider = ({ children }: Props) => {
         if (value) {
           setUserInfo({ name: 'jaeha', email: 'jaeha23@naver.com' });
           setIsLoading(true);
+        } else {
+          setUserInfo(undefined);
+          setIsLoading(true);
         }
       })
       .catch(() => {
